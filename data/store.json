@@ -1,0 +1,320 @@
+{
+  "users": [
+    {
+      "id": "usr_101",
+      "email": "trader@example.com",
+      "fullName": "Alex Vance",
+      "passwordHash": "$2b$10$YwKtglhosIhGl2DbuGvB8uul763QcnhbLrmXGUi.C0WJEbw5N0rye",
+      "role": "USER",
+      "emailVerified": true,
+      "kycStatus": "APPROVED",
+      "portfolio": {
+        "totalBalanceBtc": 0.25,
+        "availableBalanceBtc": 0.1,
+        "lockedInPlansBtc": 0.15
+      },
+      "createdAt": "2026-10-01T10:00:00.000Z"
+    },
+    {
+      "id": "adm_001",
+      "email": "admin@satoshiyield.com",
+      "fullName": "Master Operator",
+      "passwordHash": "$2b$10$YwKtglhosIhGl2DbuGvB8unrFM1DdWSzHI3SoN4uA6IQ2hz2SLYaO",
+      "role": "ADMIN",
+      "emailVerified": true,
+      "kycStatus": "APPROVED",
+      "portfolio": {
+        "totalBalanceBtc": 0,
+        "availableBalanceBtc": 0,
+        "lockedInPlansBtc": 0
+      },
+      "createdAt": "2026-09-01T08:00:00.000Z"
+    },
+    {
+      "id": "usr_102",
+      "email": "pending@example.com",
+      "fullName": "Elena Rostova",
+      "passwordHash": "$2b$10$YwKtglhosIhGl2DbuGvB8uul763QcnhbLrmXGUi.C0WJEbw5N0rye",
+      "role": "USER",
+      "emailVerified": true,
+      "kycStatus": "PENDING",
+      "portfolio": {
+        "totalBalanceBtc": 0.05,
+        "availableBalanceBtc": 0.05,
+        "lockedInPlansBtc": 0
+      },
+      "createdAt": "2026-10-25T14:30:00.000Z"
+    },
+    {
+      "id": "usr_1793276426899",
+      "createdAt": "2026-10-29T12:20:26.899Z",
+      "role": "USER",
+      "emailVerified": true,
+      "kycStatus": "APPROVED",
+      "portfolio": {
+        "totalBalanceBtc": 0.5,
+        "availableBalanceBtc": 0.45,
+        "lockedInPlansBtc": 0.05
+      },
+      "email": "test_1793276426805@satoshiyield.com",
+      "fullName": "Test Auditor",
+      "passwordHash": "$2b$10$FKU7hXaLsEIONaOdfp/9mewWq6y7vYlteGX/FqaOLagdmuHOfhOWy"
+    },
+    {
+      "id": "usr_1793276573454",
+      "createdAt": "2026-10-29T12:22:53.454Z",
+      "role": "USER",
+      "emailVerified": true,
+      "kycStatus": "APPROVED",
+      "portfolio": {
+        "totalBalanceBtc": 0.5,
+        "availableBalanceBtc": 0.45,
+        "lockedInPlansBtc": 0.05
+      },
+      "email": "test_1793276573332@satoshiyield.com",
+      "fullName": "Test Auditor",
+      "passwordHash": "$2b$10$K1N7O1rWSEGjkkRcxS.8tOSLXJAd6BQAkiP7ucgftzD3voUhBxlIC"
+    }
+  ],
+  "emailVerifications": [
+    {
+      "id": "otp_1793276426900",
+      "email": "test_1793276426805@satoshiyield.com",
+      "code": "664660",
+      "expiresAt": "2026-10-29T12:30:26.900Z",
+      "used": true,
+      "createdAt": "2026-10-29T12:20:26.900Z"
+    },
+    {
+      "id": "otp_1793276573455",
+      "email": "test_1793276573332@satoshiyield.com",
+      "code": "327157",
+      "expiresAt": "2026-10-29T12:32:53.455Z",
+      "used": true,
+      "createdAt": "2026-10-29T12:22:53.455Z"
+    }
+  ],
+  "kycSubmissions": [
+    {
+      "id": "kyc_sub_102",
+      "userId": "usr_102",
+      "userEmail": "pending@example.com",
+      "fullName": "Elena Rostova",
+      "documentType": "PASSPORT",
+      "documentNumber": "P892014892",
+      "documentFrontUrl": "/uploads/kyc/sample_passport_front.png",
+      "documentBackUrl": "/uploads/kyc/sample_passport_back.png",
+      "selfieUrl": "/uploads/kyc/sample_selfie.png",
+      "status": "PENDING",
+      "rejectionReason": null,
+      "submittedAt": "2026-10-25T14:35:00.000Z"
+    },
+    {
+      "id": "kyc_1793276427008",
+      "userId": "usr_1793276426899",
+      "userEmail": "test_1793276426805@satoshiyield.com",
+      "fullName": "Test Auditor",
+      "documentType": "PASSPORT",
+      "documentNumber": "P992019481",
+      "documentFrontUrl": "/uploads/kyc/sample_id_front.png",
+      "documentBackUrl": "/uploads/kyc/sample_id_back.png",
+      "selfieUrl": "/uploads/kyc/sample_selfie.png",
+      "status": "APPROVED",
+      "rejectionReason": null,
+      "submittedAt": "2026-10-29T12:20:27.008Z",
+      "reviewedAt": "2026-10-29T12:20:27.011Z"
+    },
+    {
+      "id": "kyc_1793276573559",
+      "userId": "usr_1793276573454",
+      "userEmail": "test_1793276573332@satoshiyield.com",
+      "fullName": "Test Auditor",
+      "documentType": "PASSPORT",
+      "documentNumber": "P992019481",
+      "documentFrontUrl": "/uploads/kyc/sample_id_front.png",
+      "documentBackUrl": "/uploads/kyc/sample_id_back.png",
+      "selfieUrl": "/uploads/kyc/sample_selfie.png",
+      "status": "APPROVED",
+      "rejectionReason": null,
+      "submittedAt": "2026-10-29T12:22:53.559Z",
+      "reviewedAt": "2026-10-29T12:22:53.562Z"
+    }
+  ],
+  "stakingPlans": [
+    {
+      "id": "starter",
+      "name": "Starter Hodler",
+      "dailyRatePercent": 1.5,
+      "minBtc": 0.005,
+      "maxBtc": 0.1,
+      "minDurationDays": 7,
+      "maxDurationDays": 30,
+      "badge": "Beginner"
+    },
+    {
+      "id": "pro",
+      "name": "Pro Trader",
+      "dailyRatePercent": 2.5,
+      "minBtc": 0.1,
+      "maxBtc": 1,
+      "minDurationDays": 14,
+      "maxDurationDays": 60,
+      "badge": "Popular"
+    },
+    {
+      "id": "whale",
+      "name": "Whale Yield",
+      "dailyRatePercent": 3.8,
+      "minBtc": 1,
+      "maxBtc": 5,
+      "minDurationDays": 30,
+      "maxDurationDays": 90,
+      "badge": "High Yield"
+    },
+    {
+      "id": "institutional",
+      "name": "Institutional Tier",
+      "dailyRatePercent": 5,
+      "minBtc": 5,
+      "maxBtc": 50,
+      "minDurationDays": 60,
+      "maxDurationDays": 180,
+      "badge": "VIP Elite"
+    }
+  ],
+  "stakingContracts": [
+    {
+      "id": "stk_001",
+      "userId": "usr_101",
+      "planId": "pro",
+      "planName": "Pro Trader",
+      "stakedBtc": 0.15,
+      "dailyRatePercent": 2.5,
+      "durationDays": 30,
+      "startDate": "2026-10-15T12:00:00.000Z",
+      "endDate": "2026-11-14T12:00:00.000Z",
+      "autoCompound": true,
+      "accruedYieldBtc": 0.0124,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "stk_1793276427017",
+      "userId": "usr_1793276426899",
+      "planId": "starter",
+      "planName": "Starter Hodler",
+      "stakedBtc": 0.05,
+      "dailyRatePercent": 1.5,
+      "durationDays": 14,
+      "startDate": "2026-10-29T12:20:27.017Z",
+      "endDate": "2026-11-12T12:20:27.017Z",
+      "autoCompound": true,
+      "accruedYieldBtc": 0,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "stk_1793276573567",
+      "userId": "usr_1793276573454",
+      "planId": "starter",
+      "planName": "Starter Hodler",
+      "stakedBtc": 0.05,
+      "dailyRatePercent": 1.5,
+      "durationDays": 14,
+      "startDate": "2026-10-29T12:22:53.567Z",
+      "endDate": "2026-11-12T12:22:53.567Z",
+      "autoCompound": true,
+      "accruedYieldBtc": 0,
+      "status": "ACTIVE"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "tx_001",
+      "userId": "usr_101",
+      "type": "DEPOSIT",
+      "amountBtc": 0.25,
+      "amountUsd": 17500,
+      "network": "Native SegWit",
+      "address": "bc1q9x087vhq2r04u29e083nm4u0j2y52q79m9ptwf",
+      "txHash": "9f83ac14e82b7194602f3a8e990c76db1a4e21b8f0423bb0d436cf982631a012",
+      "status": "COMPLETED",
+      "createdAt": "2026-10-10T09:15:00.000Z"
+    },
+    {
+      "id": "tx_002",
+      "userId": "usr_101",
+      "type": "STAKE_LOCK",
+      "amountBtc": 0.15,
+      "amountUsd": 10500,
+      "network": "Internal Staking Ledger",
+      "address": "STAKING-CONTRACT-PRO",
+      "txHash": "b561c9201940982bbdd1849102c4819039587391928472918301938592019aab",
+      "status": "COMPLETED",
+      "createdAt": "2026-10-15T12:00:00.000Z"
+    },
+    {
+      "id": "tx_003",
+      "userId": "usr_101",
+      "type": "YIELD_PAYOUT",
+      "amountBtc": 0.00375,
+      "amountUsd": 262.5,
+      "network": "Internal Staking Ledger",
+      "address": "YIELD-DISTRIBUTION",
+      "txHash": "c772093849102a90192837490192834710293847109283471029384710293847",
+      "status": "COMPLETED",
+      "createdAt": "2026-10-16T12:00:00.000Z"
+    },
+    {
+      "id": "tx_1793276427014",
+      "userId": "usr_1793276426899",
+      "type": "DEPOSIT",
+      "amountBtc": 0.5,
+      "amountUsd": 35000,
+      "network": "Native SegWit",
+      "address": "bc1qec81079458e704ed4d381cce54ddb89c0e79",
+      "txHash": "4027fe10b795e5133cbdb7f43ad803b3c5271a60c760a39a77ec35288ddf4310",
+      "status": "COMPLETED",
+      "createdAt": "2026-10-29T12:20:27.014Z"
+    },
+    {
+      "id": "tx_1793276427017",
+      "userId": "usr_1793276426899",
+      "type": "STAKE_LOCK",
+      "amountBtc": 0.05,
+      "amountUsd": 3500,
+      "network": "Internal Staking Ledger",
+      "address": "STAKING-STARTER-HODLER",
+      "txHash": "be07ce035816b6116bbf7ed5029c40193a74568085007f8eef2e7b922e751a02",
+      "status": "COMPLETED",
+      "createdAt": "2026-10-29T12:20:27.017Z"
+    },
+    {
+      "id": "tx_1793276573564",
+      "userId": "usr_1793276573454",
+      "type": "DEPOSIT",
+      "amountBtc": 0.5,
+      "amountUsd": 35000,
+      "network": "Native SegWit",
+      "address": "bc1qad174745e4dc65588af816ffc80b327ee887",
+      "txHash": "29599b889e9bb1e0a0cebc69382e32269f696735216a7798f8335d8105f60253",
+      "status": "COMPLETED",
+      "createdAt": "2026-10-29T12:22:53.565Z"
+    },
+    {
+      "id": "tx_1793276573567",
+      "userId": "usr_1793276573454",
+      "type": "STAKE_LOCK",
+      "amountBtc": 0.05,
+      "amountUsd": 3500,
+      "network": "Internal Staking Ledger",
+      "address": "STAKING-STARTER-HODLER",
+      "txHash": "5df3e58a403971792860557ab46f8957c8e2bf732261225259f6cd7278f027f2",
+      "status": "COMPLETED",
+      "createdAt": "2026-10-29T12:22:53.567Z"
+    }
+  ],
+  "withdrawals": [],
+  "adminStats": {
+    "totalAumBtc": 142.5,
+    "activeUsersCount": 1250
+  }
+}
